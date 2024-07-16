@@ -1,0 +1,26 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+@import '../components/Header/_header.scss';
+@import '../components/About/_About.scss';
+@import '../components/Skills/_skills.scss';
+@import '../components/Card/_card.scss';
+@import '../components/Projects/_projects.scss';
+@import '../components/Contact/_contact.scss';
+@import '../components/Footer/_footer.scss';
+
+
+body {
+    font-family: $font-family-primary;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: $black;
+    font-weight: 200;
+}

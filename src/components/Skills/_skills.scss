@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.carousel-bg {
+  height: 250px; // hauteur du carrousel
+  background-color: #f0f0f0; 
+  display: flex;
+  align-items: flex-start; // Aligner les éléments en haut
+  justify-content: center;
+  text-align: center;
+  position: relative; 
+  padding-top: 20px; // Espace entre le haut et le titre
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 10px; // Positionner le titre à 10px du haut
+  border-radius: 10px;
+}
+
+.carousel-caption h3, .carousel-caption p {
+  color: $button-color; // Couleur du texte
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: row; // Aligner les images horizontalement
+  justify-content: center;
+  gap: 60px; // Espace entre les images
+  margin-top: 20px; // Espace entre le titre et les images
+ 
+}
+
+.skillGroup div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.skillGroup img {
+  width: 60px; //  taille fixe pour les icônes
+  height: 60px; // taille fixe pour les icônes
+  object-fit: contain; 
+}
+
+.skillGroup p {
+  margin-top: 10px; // Espace entre l'icône et le titre
+  font-size: 14px; 
+  color: $black; 
+  text-align: center; 
+
+}

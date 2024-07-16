@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.contact-section {
+  padding: 40px; 
+  border-radius: 10px;
+  max-width: 600px; 
+  margin: 0 auto;
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      margin-bottom: 20px; // Plus d'espace entre les champs
+
+      label {
+        display: none; // Cache les labels 
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 15px; // padding champs de texte
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        &:focus::placeholder {
+          color: transparent; 
+        }
+      }
+
+      textarea {
+  
+        min-height: 150px; 
+      }
+    }
+
+    button {
+      padding: 15px 20px; 
+      border: none;
+      border-radius: 5px;
+      background-color: $primary-color;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: center; 
+
+      &:hover {
+        background-color: $button-color;
+      }
+    }
+  }
+}
