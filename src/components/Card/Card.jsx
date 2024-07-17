@@ -10,7 +10,7 @@ import './_card.scss';
 const MyCard = ({ title, image, github, website }) => {
   let imgSrc;
   try {
-    imgSrc = require(`../../images/${image}`);
+    imgSrc = require(`../../images/projects/${image}`);
   } catch (err) {
     console.error(`Error loading image: ${image}`, err);
     imgSrc = null; 

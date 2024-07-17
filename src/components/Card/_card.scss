@@ -1,10 +1,11 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+
+
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 300px; // Hauteur fixe pour toutes les cartes
+  height: 430px; // Hauteur fixe pour toutes les cartes
   width: 100%; // Largeur fixe
   overflow: hidden; // Assure que rien ne dépasse des bordures de la carte
   border: none;
@@ -15,6 +16,7 @@
     width: 100%;
     height: auto;
     max-height: calc(100% - 60px); // Hauteur de l'image moins la hauteur du footer
+    object-position: top;
   }
 
   .card-footer {
@@ -52,6 +54,7 @@
       background-color: $secondary-color; 
       border-radius: 50%; 
       transition: color 0.3s ease, background-color 0.3s ease;
+    
 
       &:hover {
         color: $button-color;

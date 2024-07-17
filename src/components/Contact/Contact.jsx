@@ -17,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <h2>Contact</h2>
       <form 
         action="https://formspree.io/f/meojokza" // Form id du site "formspree"

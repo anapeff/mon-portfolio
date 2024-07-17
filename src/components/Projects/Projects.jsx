@@ -14,7 +14,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="cardsPosition">
+    <section id="projects" className="cardsPosition">
      <h2>Mes Projets</h2>
       <Row xs={1} md={2} className="g-4">
         {projects.map((project) => (

@@ -1,5 +1,4 @@
 @import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
 
 .carousel-bg {
   height: 250px; // hauteur du carrousel
@@ -14,12 +13,12 @@
 
 .carousel-caption {
   position: absolute;
-  top: 10px; // Positionner le titre à 10px du haut
+  top: 10px; 
   border-radius: 10px;
 }
 
 .carousel-caption h3, .carousel-caption p {
-  color: $button-color; // Couleur du texte
+  color: $button-color; 
 }
 
 .skillGroup {
@@ -50,4 +49,34 @@
   color: $black; 
   text-align: center; 
 
+}
+
+/* Styles pour les indicateurs */
+
+  
+  .carousel-indicators .active {
+    background-color: $primary-color; 
+  }
+  
+  /* Changer la couleur des flèches de navigation en noir */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Désactiver l'effet de survol et de clic */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none; 
+  border: none; 
+  opacity: 1; 
+}
+
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  background: none; 
+  border: none; 
+  opacity: 1; 
 }

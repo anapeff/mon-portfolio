@@ -2,7 +2,6 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import '../styles/variables.scss';
-@import '../styles/mixins.scss';
 @import '../components/Header/_header.scss';
 @import '../components/About/_About.scss';
 @import '../components/Skills/_skills.scss';
@@ -11,7 +10,19 @@
 @import '../components/Contact/_contact.scss';
 @import '../components/Footer/_footer.scss';
 
+@font-face {
+    font-family: 'LogoFont';
+    src: url('../styles/fonts/logofont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  section {
+    scroll-margin-top: 100px; 
+  }
+  .content {
+    padding-top: 80px; 
+  }
 body {
     font-family: $font-family-primary;
     font-weight: 200;

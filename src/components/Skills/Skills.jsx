@@ -8,12 +8,12 @@ import BoostrapIcon from '../../images/skills/boostrap.svg';
 import MongoDBIcon from '../../images/skills/mongodb.svg';
 import NotionIcon from '../../images/skills/notion.svg';
 import GitHubIcon from '../../images/skills/github.svg';
-import NodeJsIcon from '../../images/skills/nodejs.svg';
+import NodeJsIcon from '../../images/skills/nodejs.svg'; 
 import './_skills.scss';
 
 const Skills = () => {
   return (
-    <section>
+    <section id="skills">
       <h2>Mes Compétences</h2>
       <Carousel interval={null}>
         <Carousel.Item>

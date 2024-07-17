@@ -11965,71 +11965,106 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav {
+.custom-nav {
   display: flex;
   align-items: center;
-  padding: 20px;
-  background-color: #91DDCF;
-}
-.nav .nav-wrapper {
-  display: flex;
   justify-content: space-between;
+  padding: 0 20px;
+  background-color: #7C9689;
   width: 100%;
-  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
 }
-.nav .logo {
-  margin-left: 40px;
+.custom-nav .nav-logo {
+  margin-right: auto;
+  padding-left: 170px;
 }
-.nav .logo .logo-text {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-weight: italic;
-  color: #F7F9F2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease-in-out;
+.custom-nav .nav-logo .logo-font {
+  color: #F0EAD6;
+  font-family: "LogoFont", sans-serif;
+  font-size: 40px;
 }
-.nav .logo .logo-text:hover {
-  color: #EBACA2;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-  transform: scale(1.1);
-}
-.nav .nav-links {
+.custom-nav .nav-links {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
+  padding-right: 180px;
 }
-.nav .nav-icons {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@media (max-width: 1024px) {
+  .custom-nav .nav-links {
+    display: none;
+  }
 }
-.nav .nav-links li {
-  margin-right: 20px;
+.custom-nav .nav-item {
+  margin-right: 30px;
 }
-.nav .nav-icons li {
-  margin-right: 10px;
+@media (max-width: 1024px) {
+  .custom-nav .nav-item {
+    margin-right: 15px;
+  }
 }
-.nav .nav-links li a {
+.custom-nav .nav-link {
   text-decoration: none;
-  color: #F7F9F2;
+  color: black;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
 }
-.nav .nav-links li a:hover {
-  color: #EBACA2;
+.custom-nav .nav-link:hover {
+  color: #F0EAD6;
 }
-.nav .nav-icons li a {
-  font-size: 23px;
+.custom-nav .nav-link.active {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: black;
 }
-.nav .nav-icons li:last-child {
-  margin-right: 0;
+@media (max-width: 1024px) {
+  .custom-nav .nav-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .custom-nav .nav-link {
+    font-size: 14px;
+  }
+}
+.custom-nav .menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .custom-nav .menu-button {
+    display: block;
+  }
+}
+.custom-nav .menu-button img {
+  width: 24px;
+  height: 24px;
+}
+.custom-nav .mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #7C9689;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 200px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+.custom-nav .mobile-menu .nav-item {
+  margin: 10px 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .custom-nav .mobile-menu {
+    display: flex;
+  }
 }
 
 .carousel-bg {
@@ -12082,10 +12117,38 @@ textarea.form-control-lg {
   text-align: center;
 }
 
+/* Styles pour les indicateurs */
+.carousel-indicators .active {
+  background-color: #7C9689;
+}
+
+/* Changer la couleur des flèches de navigation en noir */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Désactiver l'effet de survol et de clic */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  border: none;
+  opacity: 1;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+  background: none;
+  border: none;
+  opacity: 1;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 430px;
   width: 100%;
   overflow: hidden;
   border: none;
@@ -12096,6 +12159,8 @@ textarea.form-control-lg {
   width: 100%;
   height: auto;
   max-height: calc(100% - 60px);
+  -o-object-position: top;
+     object-position: top;
 }
 .card .card-footer {
   position: relative;
@@ -12133,7 +12198,7 @@ textarea.form-control-lg {
 }
 .card .card-footer a:hover {
   color: #EBACA2;
-  background-color: #91DDCF;
+  background-color: #7C9689;
 }
 
 .cardsPosition {
@@ -12187,7 +12252,7 @@ textarea.form-control-lg {
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #91DDCF;
+  background-color: #7C9689;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -12203,6 +12268,20 @@ footer {
   padding: 20px;
   background-color: black;
   color: #F7F9F2;
+}
+
+@font-face {
+  font-family: "LogoFont";
+  src: url("../styles/fonts/logofont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+section {
+  scroll-margin-top: 100px;
+}
+
+.content {
+  padding-top: 80px;
 }
 
 body {
