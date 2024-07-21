@@ -25,6 +25,7 @@ const Contact = () => {
         className="contact-form"
       >
         <div className="form-group">
+          <label htmlFor="name" className="sr-only">Nom *</label>
           <input
             type="text"
             id="name"
@@ -33,9 +34,12 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
+            aria-label="Nom"
+            autoComplete="name"
           />
         </div>
         <div className="form-group">
+          <label htmlFor="email" className="sr-only">Email *</label>
           <input
             type="email"
             id="email"
@@ -44,9 +48,12 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            aria-label="Email"
+            autoComplete="email"
           />
         </div>
         <div className="form-group">
+          <label htmlFor="subject" className="sr-only">Objet</label>
           <input
             type="text"
             id="subject"
@@ -54,9 +61,12 @@ const Contact = () => {
             placeholder="Objet"
             value={formData.subject}
             onChange={handleChange}
+            aria-label="Objet"
+            autoComplete="subject"
           />
         </div>
         <div className="form-group">
+          <label htmlFor="message" className="sr-only">Message *</label>
           <textarea
             id="message"
             name="message"
@@ -64,6 +74,8 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             required
+            aria-label="Message"
+            autoComplete="message"
           />
         </div>
         <button type="submit">Envoyer</button>

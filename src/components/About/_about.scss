@@ -1,0 +1,136 @@
+@import '../../styles/variables.scss';
+
+#about {
+  padding: 32px; // 2rem en pixels
+  display: flex;
+  justify-content: center; // Centrer le contenu horizontalement
+  align-items: center; // Centrer le contenu verticalement
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start; // Aligner les éléments en haut
+  justify-content: flex-start; // Garder les éléments alignés à gauche entre eux
+  flex-wrap: nowrap; // Ne pas autoriser le wrapping pour coller les éléments
+  background-color: #fff;
+  max-width: 1200px; // Limiter la largeur maximale pour centrer le contenu
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap; // Permettre le wrapping sur les tablettes
+    justify-content: center; // Centrer le contenu sur les tablettes
+  }
+}
+
+.about-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 72px; // 2rem en pixels
+  margin-top: 30px;
+
+  @media (max-width: 992px) {
+    justify-content: center; // Centrer l'image sur les tablettes
+    margin-right: 0;
+    margin-bottom: 32px; // Ajouter de l'espace en bas de l'image
+    margin-top: 0px;
+  }
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  max-width: 550px; // Limiter la taille maximale de l'image
+  border-radius: 15px; // Arrondir les coins de l'image
+
+  @media (max-width: 768px) {
+    max-width: 100%; // Laisser l'image prendre toute la largeur disponible sur les smartphones
+  }
+}
+
+.about-content {
+  text-align: left; // Aligner le texte à gauche
+  padding: 0; // Enlever le padding pour réduire l'écart
+  flex: 1; // Permettre au contenu de prendre de l'espace
+  max-width: 600px; // Limiter la largeur maximale pour centrer le contenu
+
+  @media (max-width: 992px) {
+    max-width: 100%; // Laisser le contenu prendre toute la largeur disponible sur les tablettes
+  }
+}
+
+.name {
+  font-size: 40px; // 2.5rem en pixels
+  font-weight: bold;
+  margin: 0 0 16px 0; // 1rem en pixels
+  font-family: $font-family-primary; // Ajustez la police si nécessaire
+  color: $black;
+  text-align: left;
+
+  span {
+    display: block; // Afficher chaque partie du nom dans une ligne séparée
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px; // Réduire la taille de la police sur les smartphones
+  }
+}
+
+.first-name, .last-name {
+  color: $black;
+  font-family: $font-family-primary;
+  font-weight: 200;
+}
+
+.title {
+  font-size: 28px; // 1.75rem en pixels
+  margin: 8px 0 16px 0; // 0.5rem et 1rem en pixels
+  text-align: left; // Assurez-vous que le texte est aligné à gauche
+  color: $primary-color;
+  font-family: $font-family-primary;
+  font-weight: 300;
+
+  @media (max-width: 768px) {
+    font-size: 24px; // Réduire la taille de la police sur les smartphones
+  }
+}
+
+.description {
+  font-size: 16px; // 1.2rem en pixels
+  margin-bottom: 16px; // 1rem en pixels
+  text-align: justify; // Justifier le texte de la description
+  line-height: 1.6; // Espacement entre les lignes
+
+  @media (max-width: 992px) {
+    font-size: 14px; // Réduire la taille de la police sur les tablettes
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px; // Réduire la taille de la police sur les smartphones
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 16px; // 1rem en pixels
+  margin-top: 16px; // 1rem en pixels
+  justify-content: flex-start; // Aligner les boutons à gauche
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px; // 0.5rem et 1rem en pixels
+  font-size: 16px; // 1rem en pixels
+  text-decoration: none;
+  border: 1px solid #000;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: $font-family-primary;
+  font-weight: 300;
+  color: $black;
+  background-color: $button-lien;
+
+  &:hover {
+    background-color: $primary-color;
+    color: #000;
+  }
+}

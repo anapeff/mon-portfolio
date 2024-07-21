@@ -9,6 +9,7 @@ import MongoDBIcon from '../../images/skills/mongodb.svg';
 import NotionIcon from '../../images/skills/notion.svg';
 import GitHubIcon from '../../images/skills/github.svg';
 import NodeJsIcon from '../../images/skills/nodejs.svg'; 
+import ReduxIcon from '../../images/skills/redux.svg';
 import './_skills.scss';
 
 const Skills = () => {
@@ -22,24 +23,28 @@ const Skills = () => {
               <h3>Frontend</h3>
               <div className='skillGroup'>
                 <div>
-                    <img src={HtmlIcon} alt="HTML" />
-                    <p>HTML</p>
+                  <img src={HtmlIcon} alt="HTML" />
+                  <p>HTML</p>
                 </div>
                 <div>
-                    <img src={CssIcon} alt="CSS" />
-                    <p>CSS</p>
+                  <img src={CssIcon} alt="CSS" />
+                  <p>CSS</p>
                 </div>
                 <div>
-                    <img src={JsIcon} alt="JavaScript" />
-                    <p>JavaScript</p>
+                  <img src={JsIcon} alt="JavaScript" />
+                  <p>JavaScript</p>
                 </div>
                 <div>
-                    <img src={ReactIcon} alt="React" />
-                    <p>React</p>
+                  <img src={ReactIcon} alt="React" />
+                  <p>React</p>
                 </div>
                 <div>
-                    <img src={BoostrapIcon} alt="Boostrap" />
-                    <p>Boostrap</p>
+                  <img src={ReduxIcon} alt="Redux" /> 
+                  <p>Redux</p>
+                </div>
+                <div>
+                  <img src={BoostrapIcon} alt="Boostrap" />
+                  <p>Bootstrap</p>
                 </div>
               </div>
             </Carousel.Caption>
@@ -50,13 +55,13 @@ const Skills = () => {
             <Carousel.Caption>
               <h3>Backend</h3>
               <div className='skillGroup'>
-              <div>
-                    <img src={NodeJsIcon} alt="NodeJs" />
-                    <p>NodeJs</p>
+                <div>
+                  <img src={NodeJsIcon} alt="NodeJs" />
+                  <p>NodeJs</p>
                 </div>
                 <div>
-                    <img src={MongoDBIcon} alt="MongoDB" />
-                    <p>MongoDB</p>
+                  <img src={MongoDBIcon} alt="MongoDB" />
+                  <p>MongoDB</p>
                 </div>
               </div>
             </Carousel.Caption>
@@ -68,12 +73,12 @@ const Skills = () => {
               <h3>Autres</h3>
               <div className='skillGroup'>
                 <div>
-                    <img src={GitHubIcon} alt="GitHub" />
-                    <p>GitHub</p>
+                  <img src={GitHubIcon} alt="GitHub" />
+                  <p>GitHub</p>
                 </div>
                 <div>
-                    <img src={NotionIcon} alt="Notion" />
-                    <p>Notion</p>
+                  <img src={NotionIcon} alt="Notion" />
+                  <p>Notion</p>
                 </div>
               </div>
             </Carousel.Caption>

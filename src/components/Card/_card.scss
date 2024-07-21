@@ -1,6 +1,16 @@
 @import '../../styles/variables.scss';
 
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .card {
   display: flex;
@@ -10,6 +20,11 @@
   overflow: hidden; // Assure que rien ne dépasse des bordures de la carte
   border: none;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 -4px 8px rgba(0, 0, 0, 0.12); // Augmente l'ombre autour des cartes
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: pulse 1s;
+  }
 
   .card-img-top {
     flex-grow: 1; // L'image prend tout l'espace disponible
@@ -20,7 +35,7 @@
   }
 
   .card-footer {
-    position: relative; 
+    position: relative;
     flex-shrink: 0; // Empêche le footer de rétrécir
     height: 60px; // Hauteur du footer
     display: flex;
@@ -35,31 +50,7 @@
       font-size: 20px;
       font-family: $font-family-primary;
       font-weight: 400;
-      text-align: center; 
-    }
-
-    .links {
-      display: flex; 
-      gap: 10px; // Ajoute de l'espace entre les liens
-      margin-left: auto; // Aligne les liens à droite
-    }
-
-    a {
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-      width: 45px; // Largeur fixe pour les liens
-      height: 45px; // Hauteur fixe pour les liens
-      color: $black;
-      background-color: $secondary-color; 
-      border-radius: 50%; 
-      transition: color 0.3s ease, background-color 0.3s ease;
-    
-
-      &:hover {
-        color: $button-color;
-        background-color: $primary-color;
-      }
+      text-align: center;
     }
   }
 }

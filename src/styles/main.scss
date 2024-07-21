@@ -1,37 +1,39 @@
-
 @import "~bootstrap/scss/bootstrap";
 
 @import '../styles/variables.scss';
 @import '../components/Header/_header.scss';
-@import '../components/About/_About.scss';
+@import '../components/About/_about.scss';
 @import '../components/Skills/_skills.scss';
 @import '../components/Card/_card.scss';
 @import '../components/Projects/_projects.scss';
+@import '../components/Modal/_projectModal.scss';
 @import '../components/Contact/_contact.scss';
 @import '../components/Footer/_footer.scss';
 
 @font-face {
-    font-family: 'LogoFont';
-    src: url('../styles/fonts/logofont.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'LogoFont';
+  src: url('../styles/fonts/logofont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  section {
-    scroll-margin-top: 100px; 
-  }
-  .content {
-    padding-top: 80px; 
-  }
+section {
+  scroll-margin-top: 100px;
+}
+
+.content {
+  padding-top: 80px;
+}
+
 body {
-    font-family: $font-family-primary;
-    font-weight: 200;
-    font-style: normal;
+  font-family: $font-family-primary;
+  font-weight: 200;
+  font-style: normal;
 }
 
 h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: $black;
-    font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $black;
+  font-weight: 200;
 }

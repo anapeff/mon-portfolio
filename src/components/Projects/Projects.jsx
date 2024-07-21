@@ -2,16 +2,24 @@ import React, { useEffect, useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import MyCard from '../Card/Card';
+import ProjectModal from '../Modal/ProjectModal';
 import projectsData from '../../data/projectsData.json';
 import './_projects.scss';
 
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [modalShow, setModalShow] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     setProjects(projectsData);
   }, []);
+
+  const handleCardClick = (project) => {
+    setSelectedProject(project);
+    setModalShow(true);
+  };
 
   return (
     <section id="projects" className="cardsPosition">
@@ -25,10 +33,18 @@ const Projects = () => {
               image={project.image} 
               github={project.github} 
               website={project.website} 
+              onClick={() => handleCardClick(project)}
             />
           </Col>
         ))}
       </Row>
+      {selectedProject && (
+        <ProjectModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+          project={selectedProject}
+        />
+      )}
     </section>
   );
 };

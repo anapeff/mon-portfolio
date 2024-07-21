@@ -1,26 +1,88 @@
-
 [
-    {
-      "id" :1,
-      "title": "Ohmyfood",
-      "image": "ohmyfood.webp",
-      "github": "https://github.com/anapeff/Projet4-OC.git",
-      "website": "https://anapeff.github.io/Projet4-OC/"
-    },
-    {
-        "id" :2,
-        "title": "Kasa",
-        "image": "kasa.webp",
-        "github": "https://github.com/anapeff/kasa.git",
-        "website": "https://kasa-9bbdm0us0-anapeffs-projects.vercel.app/"
-      },
-      {
-        "id" :3,
-        "title": "Print-it",
-        "image": "printit.webp",
-        "github": "https://github.com/anapeff/Print-it.git",
-        "website": "https://anapeff.github.io/Print-it/"
-      }
-   
-  ]
+  {
+    "id": 1,
+    "title": "Ohmyfood",
+    "image": "ohmyfood.webp",
+    "github": "https://github.com/anapeff/Projet4-OC.git",
+    "website": "https://anapeff.github.io/Projet4-OC/",
+    "description": "Pour ce projet, nous devions implémenter le site d’une foodtech en adoptant une approche mobile first et en utilisant Sass pour les animations CSS. Nous avons amélioré l'interface mobile avec des animations fluides et engageantes.",
+    "technologies": ["HTML", "CSS", "Animations"],
+    "skills": [
+      "Intégrer une maquette en mobile-first",
+      "Mettre en oeuvre des animations CSS",
+      "Versionner son projet avec Git et Github"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Print-it",
+    "image": "printit.webp",
+    "github": "https://github.com/anapeff/Print-it.git",
+    "website": "https://anapeff.github.io/Print-it/",
+    "description": "Pour ce projet, nous devions créer un carrousel en JavaScript pour le site Internet d’une imprimerie. Nous avons exploré les fondamentaux de JavaScript pour rendre le site plus dynamique et engageant, en intégrant des fonctionnalités interactives.Cette mission m'a permis de comprendre comment JavaScript interagit avec le HTML et le CSS pour créer des éléments web interactifs.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "skills": [
+      "Programmer en utilisant les fondamentaux de JavaScript",
+      "Intégrer des fonctionnalités interactives avec JavaScript"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kasa",
+    "image": "kasa.webp",
+    "github": "https://github.com/anapeff/kasa.git",
+    "website": "https://kasa-9bbdm0us0-anapeffs-projects.vercel.app/",
+    "description": "Pour ce projet, nous devions implémenter le front-end de Kasa, une plateforme de location d'appartements entre particuliers. En tant que développeur front-end freelance, j'ai été recruté pour participer à la refonte totale du site web. Ma mission consistait à démarrer le projet avec React, développer les composants et configurer les routes de l'application avec React Router, en suivant les maquettes responsives fournies sur Figma",
+    "technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "skills": [
+      "Initialiser une application avec Create React App",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React",
+      "Configurer la navigation entre les pages de l'application avec React Router",
+      "Utiliser React pour créer des composants réutilisables avec les props",
+      "Mettre en œuvre des animations CSS",
+      "Développer une interface web avec Sass"
+    ]
+  },
   
+  {
+    "id": 4,
+    "title": "Sophie Bluel",
+    "image": "sophiebluel.webp",
+    "github": "https://github.com/anapeff/Sophie-Bluel.git",
+   
+    "description": "Pour ce projet, nous devions créer un carrousel en JavaScript pour le site Internet d’une imprimerie. Nous avons exploré les fondamentaux de JavaScript pour rendre le site plus dynamique et engageant, en intégrant des fonctionnalités interactives.Cette mission m'a permis de comprendre comment JavaScript interagit avec le HTML et le CSS pour créer des éléments web interactifs.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "skills": [
+      "Programmer en utilisant les fondamentaux de JavaScript",
+      "Intégrer des fonctionnalités interactives avec JavaScript"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Nina Carducci",
+    "image": "ninacarducci.webp",
+    "github": "https://github.com/anapeff/ninacarducci.git",
+    "website": "https://anapeff.github.io/ninacarducci/",
+    "description": "Pour ce projet, nous devions aider notre cliente, une photographe, à apparaître en tête des résultats de recherche Google grâce aux bonnes pratiques de SEO et d’accessibilité. Le projet visait à améliorer la performance globale du site, réduire le temps de chargement, et renforcer son référencement sur les moteurs de recherche",
+    "technologies": ["SEO", "Référencement local", "Lighthouse", "Wave", "Accessibilité"],
+    "skills": [
+      "Utilisation de Wave et Lighthouse pour garantir des performances optimales",
+      "L'ajout des métas pour les réseaux sociaux",
+      "La mise en place du référencement local avec Schema.org",
+      "L'optimisation des images"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "ArgentBank",
+    "image": "argentbank.webp",
+    "github": "https://github.com/anapeff/ArgentBank-website.git",
+    "description": "Pour ce projet, le code de l'application bancaire Argent Bank a été complété avec React et Redux. En tant que développeuse front-end chez Argent Bank, la mission principale était de créer un tableau de bord utilisateur avec un système d'authentification, impliquant la migration d'un site web existant en HTML/CSS vers cette nouvelle plateforme.",
+    "technologies": ["HTML", "CSS", "React", "Redux", "MongoDB"],
+    "skills": [
+      "Afficher les données du back-end sur l'interface via des appels API",
+      "Configurer des routes API pour la communication client/serveur",
+      "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+    ]
+  }
+]

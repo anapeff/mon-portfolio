@@ -2,23 +2,29 @@
 
 .carousel-bg {
   height: 250px; // hauteur du carrousel
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   display: flex;
   align-items: flex-start; // Aligner les éléments en haut
   justify-content: center;
   text-align: center;
-  position: relative; 
+  position: relative;
   padding-top: 20px; // Espace entre le haut et le titre
 }
 
 .carousel-caption {
   position: absolute;
-  top: 10px; 
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%); // Centrer horizontalement
   border-radius: 10px;
+  text-align: center; // Assurer que le texte soit centré
 }
 
-.carousel-caption h3, .carousel-caption p {
-  color: $button-color; 
+.carousel-caption h3,
+.carousel-caption p {
+  color: $black;
+  font-family: $font-family-primary;
+  font-weight: 300;
 }
 
 .skillGroup {
@@ -27,38 +33,34 @@
   justify-content: center;
   gap: 60px; // Espace entre les images
   margin-top: 20px; // Espace entre le titre et les images
- 
 }
 
 .skillGroup div {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .skillGroup img {
-  width: 60px; //  taille fixe pour les icônes
+  width: 60px; // taille fixe pour les icônes
   height: 60px; // taille fixe pour les icônes
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .skillGroup p {
   margin-top: 10px; // Espace entre l'icône et le titre
-  font-size: 14px; 
-  color: $black; 
-  text-align: center; 
-
+  font-size: 14px;
+  color: $black;
+  text-align: center;
 }
 
 /* Styles pour les indicateurs */
+.carousel-indicators .active {
+  background-color: $primary-color;
+}
 
-  
-  .carousel-indicators .active {
-    background-color: $primary-color; 
-  }
-  
-  /* Changer la couleur des flèches de navigation en noir */
+/* Changer la couleur des flèches de navigation en noir */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1);
@@ -67,16 +69,67 @@
 /* Désactiver l'effet de survol et de clic */
 .carousel-control-prev,
 .carousel-control-next {
-  background: none; 
-  border: none; 
-  opacity: 1; 
+  background: none;
+  border: none;
+  opacity: 1;
 }
 
 .carousel-control-prev:focus,
 .carousel-control-prev:hover,
 .carousel-control-next:focus,
 .carousel-control-next:hover {
-  background: none; 
-  border: none; 
-  opacity: 1; 
+  background: none;
+  border: none;
+  opacity: 1;
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+  .carousel-bg {
+    height: 200px; // Réduire la hauteur du carrousel pour les petits écrans
+  }
+
+  .skillGroup {
+    flex-direction: row; // Aligner les images horizontalement sur petits écrans
+    flex-wrap: nowrap; // Empêcher les icônes de passer à la ligne
+    gap: 10px; // Réduire l'espace entre les images
+    justify-content: center; // Centre les éléments sur les petits écrans
+  }
+
+  .skillGroup div {
+    width: auto; // Permet aux icônes de s'adapter à la largeur disponible
+  }
+
+  .skillGroup img {
+    width: 30px; // Réduire la taille des icônes
+    height: 30px; // Réduire la taille des icônes
+  }
+
+  .skillGroup p {
+    font-size: 12px; // Réduire la taille du texte
+    margin-top: 5px; // Réduire l'espace entre l'icône et le titre
+  }
+
+  .carousel-caption {
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%); // Centrer horizontalement sur petits écrans
+  }
+}
+
+/* Media queries pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skillGroup {
+    gap: 20px; // Réduire l'espace entre les images sur les tablettes
+  }
+
+  .skillGroup img {
+    width: 50px; // Réduire légèrement la taille des icônes sur les tablettes
+    height: 50px;
+  }
+
+  .skillGroup p {
+    font-size: 13px; // Réduire légèrement la taille du texte sur les tablettes
+    margin-top: 8px; // Réduire l'espace entre l'icône et le titre
+  }
 }

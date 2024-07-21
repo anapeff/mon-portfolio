@@ -1,5 +1,12 @@
 @import '../../styles/variables.scss';
 
+header {
+  .nav {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
 .custom-nav {
   display: flex;
   align-items: center; 
@@ -16,10 +23,10 @@
 
   .nav-logo {
     margin-right: auto;
-    padding-left: 170px; 
+    padding-left: 190px; 
 
     .logo-font {
-      color: $button-lien;
+      color: $secondary-color;
       font-family: 'LogoFont', sans-serif;
       font-size: 40px;
     }
