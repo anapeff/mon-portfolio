@@ -5,8 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 20px; // Ajoute un espacement de 20px à gauche et à droite
-  margin-top: 40px; // Ajoute un espacement de 40px en haut pour séparer du header
+  padding: 0 20px; 
+  margin-top: 40px;
 }
 
 .paddingCard {
@@ -15,9 +15,9 @@
 }
 
 .card {
-  // Media queries pour redimensionner les cartes sur les petits écrans
+ 
   @media (max-width: 767px) {
-    width: 100%; // Ajustez cette valeur selon vos besoins
-    height: 300px; // Spécifiez la hauteur souhaitée sur mobile
+    width: 100%; 
+    height: 300px; 
   }
 }

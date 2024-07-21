@@ -1,9 +1,9 @@
 @import '../../styles/variables.scss';
 
 .modal-content {
-  background-color: #F5F5F5; // Couleur de fond pour la modal
-  padding: 20px; // Ajoute du padding pour espacer le contenu des bords
-  font-family: $font-family-primary; // Change la police du texte en général
+  background-color: #F5F5F5;
+  padding: 20px; 
+  font-family: $font-family-primary; 
   font-weight: 300;
   border: none;
   font-size: 18px;
@@ -52,8 +52,8 @@ h4 {
 
 .technologies-list {
   display: flex;
-  flex-wrap: wrap; // Permet de passer à la ligne si nécessaire
-  gap: 10px; // Ajoute de l'espace entre les éléments
+  flex-wrap: wrap; 
+  gap: 10px; 
   padding: 0;
   padding-bottom: 20px;
   padding-top: 15px;
@@ -72,7 +72,7 @@ h4 {
 }
 
 .skills-list {
-  list-style-type: disc; // Utilise des puces pour les éléments de la liste
+  list-style-type: disc; 
   padding-left: 20px; // Ajoute un padding à gauche pour les puces
   margin: 0;
   display: flex;

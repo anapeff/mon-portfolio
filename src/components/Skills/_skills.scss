@@ -17,7 +17,7 @@
   left: 50%;
   transform: translateX(-50%); // Centrer horizontalement
   border-radius: 10px;
-  text-align: center; // Assurer que le texte soit centré
+  text-align: center; 
 }
 
 .carousel-caption h3,
@@ -29,7 +29,7 @@
 
 .skillGroup {
   display: flex;
-  flex-direction: row; // Aligner les images horizontalement
+  flex-direction: row; 
   justify-content: center;
   gap: 60px; // Espace entre les images
   margin-top: 20px; // Espace entre le titre et les images
@@ -86,50 +86,50 @@
 /* Media queries pour petits écrans */
 @media (max-width: 768px) {
   .carousel-bg {
-    height: 200px; // Réduire la hauteur du carrousel pour les petits écrans
+    height: 200px; 
   }
 
   .skillGroup {
-    flex-direction: row; // Aligner les images horizontalement sur petits écrans
-    flex-wrap: nowrap; // Empêcher les icônes de passer à la ligne
-    gap: 10px; // Réduire l'espace entre les images
-    justify-content: center; // Centre les éléments sur les petits écrans
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    gap: 10px; 
+    justify-content: center; 
   }
 
   .skillGroup div {
-    width: auto; // Permet aux icônes de s'adapter à la largeur disponible
+    width: auto; 
   }
 
   .skillGroup img {
-    width: 30px; // Réduire la taille des icônes
-    height: 30px; // Réduire la taille des icônes
+    width: 30px; 
+    height: 30px; 
   }
 
   .skillGroup p {
-    font-size: 12px; // Réduire la taille du texte
-    margin-top: 5px; // Réduire l'espace entre l'icône et le titre
+    font-size: 12px; 
+    margin-top: 5px; 
   }
 
   .carousel-caption {
     width: auto;
     left: 50%;
-    transform: translateX(-50%); // Centrer horizontalement sur petits écrans
+    transform: translateX(-50%); 
   }
 }
 
 /* Media queries pour les tablettes */
 @media (min-width: 769px) and (max-width: 1024px) {
   .skillGroup {
-    gap: 20px; // Réduire l'espace entre les images sur les tablettes
+    gap: 20px; 
   }
 
   .skillGroup img {
-    width: 50px; // Réduire légèrement la taille des icônes sur les tablettes
+    width: 50px; 
     height: 50px;
   }
 
   .skillGroup p {
-    font-size: 13px; // Réduire légèrement la taille du texte sur les tablettes
-    margin-top: 8px; // Réduire l'espace entre l'icône et le titre
+    font-size: 13px; 
+    margin-top: 8px; 
   }
 }
