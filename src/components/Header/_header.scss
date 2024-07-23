@@ -23,7 +23,11 @@ header {
 
   .nav-logo {
     margin-right: auto;
-    padding-left: 190px; 
+    padding-left: 180px; 
+
+    @media (max-width: 1024px) {
+      padding-left:0px;
+    }
 
     .logo-font {
       color: $secondary-color;

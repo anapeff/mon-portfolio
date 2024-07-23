@@ -11987,7 +11987,12 @@ header .nav {
 }
 .custom-nav .nav-logo {
   margin-right: auto;
-  padding-left: 190px;
+  padding-left: 180px;
+}
+@media (max-width: 1024px) {
+  .custom-nav .nav-logo {
+    padding-left: 0px;
+  }
 }
 .custom-nav .nav-logo .logo-font {
   color: #F7F9F2;
@@ -12405,7 +12410,7 @@ a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .card {
     width: 100%;
     height: 300px;
